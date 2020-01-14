@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--IF YOU HAVE 2 TEXT LINES, YOU SHOULD HAVE (2-1) CUE POINT TIMES, SO IT IS ALWAYS X - 1 = CUE POINTS -->
+<videos>
+	<!-- game VIDEO -->
+	<video>
+		<name>game</name>
+		<cc_text>
+			<te>Félicitations! Vous êtes notre grand(e) gagnant(e).</te>
+			<te>Nous espérons vous revoir lors de la prochaine partie de questions éclair!</te>
+		</cc_text>
+		<cc_times>
+			<time>180</time>
+		</cc_times>
+	</video>
+	<winner_text>
+		<te>Félicitations</te>
+		<te>!</te>
+		<te>Vous avez</te>
+		<te>bonne(s) réponse(s) sur</te>
+		<te>questions!</te>
+	</winner_text>
+	<disclaim_text>Les questions du jeu-questionnaire ne sont pas prises en compte.</disclaim_text>
+</videos>

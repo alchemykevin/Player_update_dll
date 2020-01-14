@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--IF YOU HAVE 2 TEXT LINES, YOU SHOULD HAVE (2-1) CUE POINT TIMES, SO IT IS ALWAYS X - 1 = CUE POINTS -->
+<videos>
+	<!-- game VIDEO -->
+	<video>
+		<name>game</name>
+		<cc_text>
+			<te>Chào Mừng bạn đến với trò chơi Lightning Round!</te>
+			<te>Đây là trò chơi, đố vui, vận may và nổi tiếng!</te>
+			<te>Bạn sẽ phải suy nghĩ và hành động nhanh.</te>
+			<te>Trả lời đúng đa số các câu hỏi trước, và bạn sẽ là</te>
+			<te>Người Thắng! Người Thắng! Người Thắng!</te>
+			<te>Khi bạn nghe câu hỏi, hãy trả lời là có, hoặc không</te>
+			<te>Và chúng ta làm đi nào!</te>
+		</cc_text>
+		<cc_times>
+			<time>180</time>
+			<time>349</time>
+			<time>571</time>
+			<time>789</time>
+			<time>845</time>
+			<time>927</time>
+		</cc_times>
+	</video>
+</videos>

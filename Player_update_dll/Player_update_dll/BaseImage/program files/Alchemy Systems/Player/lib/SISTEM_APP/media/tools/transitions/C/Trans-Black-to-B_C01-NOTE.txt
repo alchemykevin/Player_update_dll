@@ -1,0 +1,7 @@
+Trans-Black-to-Bookend-C01.swf
+
+is a duplicate of
+
+Trans-Black-to-B_C01.swf
+
+To edit these transitions use Trans-Black-to-B_C01.fla

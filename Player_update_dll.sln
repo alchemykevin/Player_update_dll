@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E729F059-12D4-455F-A2A4-FDA8DD25E08A}") = "Player_update_dll", "Player_update_dll\Player_update_dll.isproj", "{F963626D-664E-4B23-B182-5DAEFC3D7B3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F963626D-664E-4B23-B182-5DAEFC3D7B3C}.Release|Default.ActiveCfg = Release
+		{F963626D-664E-4B23-B182-5DAEFC3D7B3C}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59392799-81A3-4DEA-9DB0-139EE87D1457}
+	EndGlobalSection
+EndGlobal

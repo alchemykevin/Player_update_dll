@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--IF YOU HAVE 2 TEXT LINES, YOU SHOULD HAVE (2-1) CUE POINT TIMES, SO IT IS ALWAYS X - 1 = CUE POINTS -->
+<videos>
+	<!-- game VIDEO -->
+	<video>
+		<name>game</name>
+		<cc_text>
+			<te>欢迎参加抢答游戏！</te>
+			<te>这是测验，是游戏，是名也是利！</te>
+			<te>你必须思维敏捷，行动快速！</te>
+			<te>如果能首先给出最多正确答案，你就是……</te>
+			<te>赢家！赢家！赢家！</te>
+			<te>听到问题后，立即回答“是”或“否”。</te>
+			<te>马上开始！</te>
+		</cc_text>
+		<cc_times>
+			<time>180</time>
+			<time>349</time>
+			<time>571</time>
+			<time>789</time>
+			<time>845</time>
+			<time>927</time>
+		</cc_times>
+	</video>
+</videos>

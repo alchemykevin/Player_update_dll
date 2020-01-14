@@ -1,0 +1,119 @@
+<?php
+$key = "sistemSTANDalonePlayer";
+$lang = $_GET['l'] ? $_GET['l'] : 'E';
+$unit = $_GET['u'];
+$mod = $_GET['m'];
+$branch = $_GET['b'] ? $_GET['b'] : 'trunk';
+$url = full_url();
+$url = substr($url,0,strrpos($url,'/')+1);
+$md5 = $_GET['k'];
+$md5_test = md5($lang.$unit.$mod.$branch.$key);
+
+if(strpos($_SERVER['PATH_INFO'],'framework_branch=') !== false){
+	$framework_branch = substr($_SERVER['PATH_INFO'],strpos($_SERVER['PATH_INFO'],'framework_branch=')+17);
+	$framework_branch = substr($framework_branch,0,strpos($framework_branch,'/'));
+}
+if(strpos($_SERVER['PATH_INFO'],'module_branch=') !== false){
+	$module_branch = substr($_SERVER['PATH_INFO'],strpos($_SERVER['PATH_INFO'],'module_branch=')+14);
+	$module_branch = substr($module_branch,0,strpos($module_branch,'/'));
+} else{
+	$module_branch = '200810';
+}
+
+
+function full_url(){
+	$s = empty($_SERVER["HTTPS"]) ? '' : ($_SERVER["HTTPS"] == "on") ? "s" : "";
+	$protocol = substr(strtolower($_SERVER["SERVER_PROTOCOL"]), 0, strpos(strtolower($_SERVER["SERVER_PROTOCOL"]), "/")) . $s;
+	$port = ($_SERVER["SERVER_PORT"] == "80") ? "" : (":".$_SERVER["SERVER_PORT"]);
+	return $protocol . "://" . $_SERVER['SERVER_NAME'] . $port . $_SERVER['REQUEST_URI'];
+}
+?>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>SISTEM Stand Alone Player</title>
+<script language="javascript"> AC_FL_RunContent = 0; </script>
+<script language="javascript"> DetectFlashVer = 0; </script>
+<script src="AC_RunActiveContent.js" language="javascript"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+// -----------------------------------------------------------------------------
+// Globals
+// Major version of Flash required
+var requiredMajorVersion = 7;
+// Minor version of Flash required
+var requiredMinorVersion = 0;
+// Revision of Flash required
+var requiredRevision = 14;
+// -----------------------------------------------------------------------------
+// -->
+</script>
+<style>
+body{
+	background-color:#96a4ad;
+	text-align:center;
+}
+h2{
+	color:#FFFFFF;
+	font-family:Verdana,sans-serif;
+}
+</style>
+</head>
+<body>
+<?php if ($_GET['showmd5']): ?>
+	MD5 = <?php echo $md5_test; ?>
+<?php endif; ?>
+<?php if (!$unit || !$mod): ?>
+	<h2>There is not enough information provided to play the correct course.</h2>
+<?php elseif ($md5 != $md5_test): ?>
+	<h2>You do not have access this this course.</h2>
+<?php else: ?>
+<script language="JavaScript" type="text/javascript">
+<!--
+if (AC_FL_RunContent == 0 || DetectFlashVer == 0) {
+	alert("This page requires AC_RunActiveContent.js.");
+} else {
+	var hasRightVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+	if(hasRightVersion) {  // if we've detected an acceptable version
+		// embed the flash movie
+		AC_FL_RunContent(
+			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,14,0',
+			'width', '800',
+			'height', '600',
+			'src', '<?php echo $url ?>standAlonePlayer',
+			'quality', 'high',
+			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+			'align', 'middle',
+			'play', 'true',
+			'loop', 'true',
+			'scale', 'showall',
+			'wmode', 'window',
+			'devicefont', 'false',
+			'id', 'shell',
+			'bgcolor', '#96a4ad',
+			'name', 'shell',
+			'menu', 'true',
+			'allowScriptAccess','sameDomain',
+			'allowFullScreen','false',
+			'movie', '<?php echo $url ?>standAlonePlayer',
+			'salign', '',
+			'FLashVars', 'language=<?php echo $lang; ?>&amp;Unit=<?php echo $unit; ?>&amp;Mod=<?php echo $mod; ?>&amp;courseVideoPath=rtmp://fms01.alchemysystems.com/vod/media/flv:modules/<? echo $module_branch ?>/'
+			); //end AC code
+	} else {  // flash is too old or we can't detect the plugin
+		var alternateContent = ''
+			+ 'This content requires the Adobe Flash Player.'
+			+ '<a href=http://www.macromedia.com/go/getflash/>Get Flash</a>';
+		document.write(alternateContent);  // insert non-flash content
+	}
+}
+// -->
+</script>
+<noscript>
+	// Provide alternate content for browsers that do not support scripting
+	// or for those that have scripting disabled.
+  	This content requires the Adobe Flash Player.
+  	<a href="http://www.macromedia.com/go/getflash/">Get Flash</a>
+</noscript>
+<?php endif; ?>
+</body>
+</html>

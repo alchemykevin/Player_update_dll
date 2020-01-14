@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema version="7.01.055" attributeFormDefault="unqualified" elementFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="sistem">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="startup">
+          <xs:complexType>
+            <xs:all>
+              <xs:element name="auto_sync" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="auto_sync_required" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="email_to_support" type="xs:string" default="sistemsupport@alchemysystems.com" />
+              <xs:element name="update_notify" default="yes">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="locale" default="en-US">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="en-US" />
+                    <xs:enumeration value="es-US" />
+                    <xs:enumeration value="fr-CA" />
+                  </xs:restriction>
+                  <xs:element name="gbt_default_locale" default="en-US">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="en-US" />
+                        <xs:enumeration value="es-US" />
+                        <xs:enumeration value="fr-CA" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="debug" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="locks">
+          <xs:complexType>
+            <xs:all>
+              <xs:element name="gameshow" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="feedback" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="training_module">
+          <xs:complexType>
+            <xs:all>
+              <xs:element name="admin_password" type="xs:string" default="ARkaI7GiVc" />
+              <xs:element name="barcode_id" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="barcodefields" default="1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="1" />
+                    <xs:enumeration value="2" />
+                    <xs:enumeration value="3" />
+                    <xs:enumeration value="4" />
+                    <xs:enumeration value="5" />
+                    <xs:enumeration value="6" />
+                    <xs:enumeration value="7" />
+                    <xs:enumeration value="8" />
+                    <xs:enumeration value="9" />
+                    <xs:enumeration value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="barcodehash" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="barcodesalt" default=" " />
+              <xs:element name="bi_sendanswers" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="clicker_type" default="14">
+                <xs:simpleType>
+                  <xs:restriction base="xs:positiveInteger">
+                    <xs:enumeration value="12" />
+                    <xs:enumeration value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="clicker_rfchannel" default="5">
+                <xs:simpleType>
+                  <xs:restriction base="xs:positiveInteger">
+                    <xs:enumeration value="5" />
+                    <xs:enumeration value="8" />
+                    <xs:enumeration value="11" />
+                    <xs:enumeration value="14" />
+                    <xs:enumeration value="17" />
+                    <xs:enumeration value="35" />
+                    <xs:enumeration value="38" />
+                    <xs:enumeration value="41" />
+                    <xs:enumeration value="44" />
+                    <xs:enumeration value="47" />
+                    <xs:enumeration value="50" />
+                    <xs:enumeration value="68" />
+                    <xs:enumeration value="71" />
+                    <xs:enumeration value="74" />
+                    <xs:enumeration value="77" />
+                    <xs:enumeration value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="display_show_on" type="xs:string" default="DISPLAY1" />
+              <xs:element name="display_resolution" default="Full Screen">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="Full Screen" />
+                    <xs:enumeration value="Window" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="remediation_prevention" default="yes">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="module_pause" default="yes">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="facilitator_view" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kiosk_allow_retakes" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="play_mode" default="clicker">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="clicker" />
+                    <xs:enumeration value="mouse" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="show_barcode" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="show_games" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="show_test_results" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="show_eval_results" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="show_bi_results" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bottombar_show" default="remotes">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="ids" />
+                    <xs:enumeration value="names" />
+                    <xs:enumeration value="remotes" />
+                    <xs:enumeration value="remotes_names" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="number_of_feedbacks" default="2">
+                <xs:simpleType>
+                  <xs:restriction base="xs:integer">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                    <xs:enumeration value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="results_timer" default="8" type="xs:positiveInteger" />
+              <xs:element name="results_timer_autoclose" default="yes">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="subtitles" default="yes">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="captions" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="facilitator_required" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="last_record_uploaded_date" type="xs:string" default="12-12-12 PM 12:12:12" />
+              <xs:element name="no_of_records_uploaded" type="xs:nonNegativeInteger" default="0" />
+              <xs:element name="selfservice_mode" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="selfservice_require_facilitator" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="selfservice_select_all_courses" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="selfservice_select_all_playlists" default="yes">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="selfservice_select_all_learningplans" default="yes">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="selfservice_automatic_logout" default="yes">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="selfservice_automatic_logout_timeout" type="xs:integer" default="30" />
+              <xs:element name="selfservice_automatic_logout_warning" type="xs:integer" default="30" />
+              <xs:element name="course_parser_version" type="xs:string" default="--" />
+              <xs:element name="course_player_version" type="xs:string" default="--" />
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="webservices">
+          <xs:complexType>
+            <xs:all>
+              <xs:element name="command_polling" default="yes">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="userid" type="xs:string" />
+              <xs:element name="password" type="xs:string" />
+              <xs:element name="location" type="xs:string" default="GLOBAL" />
+              <xs:element name="lms_url" type="xs:string" />
+              <xs:element name="url" type="xs:string" />
+              <xs:element name="rest_url" type="xs:string" />
+              <xs:element name="protocol" default="https">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="http" />
+                    <xs:enumeration value="https" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="proxy" />
+              <xs:element name="proxy_port" type="xs:nonNegativeInteger" default="80" />
+              <xs:element name="proxy_userid" type="xs:string" />
+              <xs:element name="proxy_password" type="xs:string" />
+              <xs:element name="training_records_timeout" default="60" type="xs:positiveInteger" />
+              <xs:element name="database_sync_timeout" type="xs:positiveInteger" default="60" />
+              <xs:element name="roaming_work_sites">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="option" type="xs:string" default="GLOBAL" minOccurs="1" maxOccurs="unbounded" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="bandwidth_enabled" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cmd_download_bandwidth" type="xs:positiveInteger" default="1000" />
+              <xs:element name="cmd_server" type="xs:string" default="updates.alchemysystems.com" />
+              <xs:element name="cmd_server_downloadport" type="xs:positiveInteger" default="80" />
+              <xs:element name="cmd_user" type="xs:string" default="sistemplayer" />
+              <xs:element name="cmd_password" type="xs:string" default="i7Qa9sWjfkf" />
+              <xs:element name="cmd_protocol_download" default="http">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="http" />
+                    <xs:enumeration value="https" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cmd_upload_server" type="xs:string" default="upload.sistemlms.com" />
+              <xs:element name="cmd_upload_serverport" type="xs:positiveInteger" default="21" />
+              <xs:element name="cmd_upload_userid" type="xs:string" default="sistemplayer" />
+              <xs:element name="cmd_upload_password" type="xs:string" default="i7Qa9sWjfkf" />
+              <xs:element name="cmd_upload_protocol" type="xs:string" default="ftp" />
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="settings">
+          <xs:complexType>
+            <xs:all>
+              <xs:element name="clicker_activate_timeout" type="xs:positiveInteger" default="40" />
+              <xs:element name="clicker_unanswered_timeout" default="12">
+                <xs:simpleType>
+                  <xs:restriction base="xs:integer">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="6" />
+                    <xs:enumeration value="12" />
+                    <xs:enumeration value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bs_bindingdelay_time" type="xs:nonNegativeInteger" default="6000" />
+              <xs:element name="rm_setanswer_time" type="xs:nonNegativeInteger" default="5200" />
+              <xs:element name="rm_singlesetanswer_time" type="xs:nonNegativeInteger" default="1000" />
+              <xs:element name="bs_connect_write_hex_time" type="xs:nonNegativeInteger" default="150" />
+              <xs:element name="bs_disconnect_write_hex_time" type="xs:nonNegativeInteger" default="50" />
+              <xs:element name="bs_getmacid_write_hex_time" type="xs:nonNegativeInteger" default="50" />
+              <xs:element name="bs_version_write_hex_time" type="xs:nonNegativeInteger" default="450" />
+              <xs:element name="bs_startbinding_write_hex_time" type="xs:nonNegativeInteger" default="150" />
+              <xs:element name="bs_stopbinding_write_hex_time" type="xs:nonNegativeInteger" default="150" />
+              <xs:element name="bs_reset_write_hex_time" type="xs:nonNegativeInteger" default="50" />
+              <xs:element name="bs_setchannel_write_hex_time" type="xs:nonNegativeInteger" default="1000" />
+              <xs:element name="bs_getchannel_write_hex_time" type="xs:nonNegativeInteger" default="1000" />
+              <xs:element name="rm_setoff_write_hex_time" type="xs:nonNegativeInteger" default="5000" />
+              <xs:element name="rm_singlesetoff_write_hex_time" type="xs:nonNegativeInteger" default="3000" />
+              <xs:element name="pl_ShowAdvanced" default="no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="yes" />
+                    <xs:enumeration value="no" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+      <xs:attribute name="version" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

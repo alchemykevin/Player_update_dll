@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="is.xsl" ?>
+<!DOCTYPE msi [
+   <!ELEMENT msi   (summary,table*)>
+   <!ATTLIST msi version    CDATA #REQUIRED>
+   <!ATTLIST msi xmlns:dt   CDATA #IMPLIED
+                 codepage   CDATA #IMPLIED
+                 compression (MSZIP|LZX|none) "LZX">
+   
+   <!ELEMENT summary       (codepage?,title?,subject?,author?,keywords?,comments?,
+                            template,lastauthor?,revnumber,lastprinted?,
+                            createdtm?,lastsavedtm?,pagecount,wordcount,
+                            charcount?,appname?,security?)>
+                            
+   <!ELEMENT codepage      (#PCDATA)>
+   <!ELEMENT title         (#PCDATA)>
+   <!ELEMENT subject       (#PCDATA)>
+   <!ELEMENT author        (#PCDATA)>
+   <!ELEMENT keywords      (#PCDATA)>
+   <!ELEMENT comments      (#PCDATA)>
+   <!ELEMENT template      (#PCDATA)>
+   <!ELEMENT lastauthor    (#PCDATA)>
+   <!ELEMENT revnumber     (#PCDATA)>
+   <!ELEMENT lastprinted   (#PCDATA)>
+   <!ELEMENT createdtm     (#PCDATA)>
+   <!ELEMENT lastsavedtm   (#PCDATA)>
+   <!ELEMENT pagecount     (#PCDATA)>
+   <!ELEMENT wordcount     (#PCDATA)>
+   <!ELEMENT charcount     (#PCDATA)>
+   <!ELEMENT appname       (#PCDATA)>
+   <!ELEMENT security      (#PCDATA)>                            
+                                
+   <!ELEMENT table         (col+,row*)>
+   <!ATTLIST table
+                name        CDATA #REQUIRED>
+
+   <!ELEMENT col           (#PCDATA)>
+   <!ATTLIST col
+                 key       (yes|no) #IMPLIED
+                 def       CDATA #IMPLIED>
+                 
+   <!ELEMENT row            (td+)>
+   
+   <!ELEMENT td             (#PCDATA)>
+   <!ATTLIST td
+                 href       CDATA #IMPLIED
+                 dt:dt     (string|bin.base64) #IMPLIED
+                 md5        CDATA #IMPLIED>
+]>
+<msi version="2.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" codepage="65001">
+	
+	<summary>
+		<codepage>1252</codepage>
+		<title>Installation Database</title>
+		<subject></subject>
+		<author>InstallShield Software Corporation</author>
+		<keywords></keywords>
+		<comments>Contact:  Your local administrator</comments>
+		<template>Intel;1033</template>
+		<lastauthor>HidenoriYamanishi</lastauthor>
+		<revnumber>{Put Package Code GUID Here}</revnumber>
+		<lastprinted/>
+		<createdtm>06/21/1999 02:00</createdtm>
+		<lastsavedtm>01/19/2016 14:17</lastsavedtm>
+		<pagecount>200</pagecount>
+		<wordcount>0</wordcount>
+		<charcount/>
+		<appname>InstallShield Developer</appname>
+		<security>1</security>
+	</summary>
+	
+	<table name="ExcludedPackages">
+		<col key="yes" def="s72">PackageCode</col>
+	</table>
+
+	<table name="ISPathVariable">
+		<col key="yes" def="s32">ISPathVariable</col>
+		<col def="S255">Value</col>
+		<col def="S255">TestValue</col>
+		<col def="i4">Type</col>
+		<row><td>CommonFilesFolder</td><td/><td/><td>1</td></row>
+		<row><td>ISProductFolder</td><td/><td/><td>1</td></row>
+		<row><td>ISProjectDataFolder</td><td/><td/><td>1</td></row>
+		<row><td>ISProjectFolder</td><td/><td/><td>1</td></row>
+		<row><td>PATH_TO_DISK1_FILES</td><td>C:\Users\Tester\source\repos\Player\DOTNET_SOURCE\Alchemy.Player.Setup\Alchemy.Player.Setup\Default Configuration\Release\DiskImages\DISK1</td><td/><td>2</td></row>
+		<row><td>ProgramFilesFolder</td><td/><td/><td>1</td></row>
+		<row><td>SystemFolder</td><td/><td/><td>1</td></row>
+		<row><td>WindowsFolder</td><td/><td/><td>1</td></row>
+	</table>
+
+	<table name="ISQuickPatchFile">
+		<col key="yes" def="s72">OriginalFile</col>
+		<col def="S0">UpdatedFilePath</col>
+		<col def="I2">Attributes</col>
+		<col def="S72">Directory</col>
+		<col def="S72">Feature</col>
+	</table>
+
+	<table name="ISQuickPatchProperty">
+		<col key="yes" def="s72">Property</col>
+		<col def="S0">Value</col>
+		<row><td>BuildLocation</td><td>&lt;ISProjectDataFolder&gt;</td></row>
+		<row><td>BuildSimplification</td><td>-1</td></row>
+		<row><td>CreateSetupExe</td><td>1</td></row>
+		<row><td>DWUSVERSION</td><td/></row>
+		<row><td>DotNetRedistLocation</td><td>http://www.installengine.com/cert05/dotnetfx</td></row>
+		<row><td>DotNetRedistLocationOption</td><td>3</td></row>
+		<row><td>GenerateMsiPatchOldAssembly</td><td>1</td></row>
+		<row><td>ISEngineLocation</td><td>http://www.installengine.com/cert05/isengine</td></row>
+		<row><td>ISEngineLocationOption</td><td>2</td></row>
+		<row><td>Install9xEngine</td><td>0</td></row>
+		<row><td>InstallNTEngine</td><td>0</td></row>
+		<row><td>MsiEngineVersion</td><td>12</td></row>
+		<row><td>MsiLocation30</td><td>http://www.installengine.com/Msiengine30</td></row>
+		<row><td>MsiLocation9x</td><td>http://www.installengine.com/Msiengine20</td></row>
+		<row><td>MsiLocationNT</td><td>http://www.installengine.com/Msiengine20</td></row>
+		<row><td>MsiLocationOption</td><td>2</td></row>
+		<row><td>OriginalSetupPackageCode</td><td>{977CBEFD-CF7B-4094-A165-3011C0FC109D}</td></row>
+		<row><td>OriginalSetupPath</td><td>&lt;ISProjectDataFolder&gt;\BaseImage\Alchemy Player.msi</td></row>
+		<row><td>ParentQuickPatch</td><td/></row>
+		<row><td>PatchSetupVersion</td><td/></row>
+		<row><td>SetupLauncherManifest</td><td>3</td></row>
+		<row><td>SetupLauncherType</td><td>1</td></row>
+	</table>
+
+	<table name="ISQuickPatchRegistryKey">
+		<col key="yes" def="s72">Key</col>
+		<col def="s255">Name</col>
+		<col def="s255">Parent_Key</col>
+		<col def="I2">Effect</col>
+		<col def="S255">NewName</col>
+		<col def="S72">Feature</col>
+	</table>
+
+	<table name="ISQuickPatchRegistryValue">
+		<col key="yes" def="s255">Key</col>
+		<col key="yes" def="S255">Value</col>
+		<col def="S0">Data</col>
+		<col def="I2">Effect</col>
+		<col def="S255">NewValue</col>
+		<col def="S0">NewData</col>
+		<col def="S72">Feature</col>
+	</table>
+
+	<table name="InstallShield">
+		<col key="yes" def="s72">Property</col>
+		<col def="S0">Value</col>
+		<row><td>SaveAsSchema</td><td/></row>
+		<row><td>SchemaVersion</td><td>781</td></row>
+		<row><td>Type</td><td>ISQP</td></row>
+	</table>
+
+	<table name="PatchMetadata">
+		<col key="yes" def="S72">Company</col>
+		<col key="yes" def="s72">Property</col>
+		<col def="l0">Value</col>
+		<row><td></td><td>AllowRemoval</td><td>0</td></row>
+		<row><td></td><td>Classification</td><td>Update</td></row>
+		<row><td></td><td>Description</td><td>Update for Alchemy Player</td></row>
+		<row><td></td><td>DisplayName</td><td>Alchemy Player</td></row>
+		<row><td></td><td>ManufacturerName</td><td>Alchemy Systems</td></row>
+		<row><td></td><td>MoreInfoURL</td><td>http://www.AlchemySystems.com/contact/</td></row>
+		<row><td></td><td>TargetProductName</td><td>Alchemy Player</td></row>
+	</table>
+
+	<table name="_Validation">
+		<col key="yes" def="s32">Table</col>
+		<col key="yes" def="s32">Column</col>
+		<col def="s4">Nullable</col>
+		<col def="I4">MinValue</col>
+		<col def="I4">MaxValue</col>
+		<col def="S255">KeyTable</col>
+		<col def="I2">KeyColumn</col>
+		<col def="S32">Category</col>
+		<col def="S255">Set</col>
+		<col def="S255">Description</col>
+		<row><td>ExcludedPackages</td><td>PackageCode</td><td>N</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>ISPathVariable</td><td>ISPathVariable</td><td>N</td><td/><td/><td/><td/><td/><td/><td>The name of the path variable</td></row>
+		<row><td>ISPathVariable</td><td>TestValue</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td>The test value of the path variable.</td><td/></row>
+		<row><td>ISPathVariable</td><td>Type</td><td>N</td><td/><td/><td/><td/><td/><td>1;2;4;8</td><td>The Type of the path variable</td></row>
+		<row><td>ISPathVariable</td><td>Value</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td>The value of the path variable</td></row>
+		<row><td>ISQuickPatchFile</td><td>OriginalFile</td><td>N</td><td/><td/><td/><td/><td>Identifier</td><td/><td>File key of file in original media</td></row>
+		<row><td>ISQuickPatchFile</td><td>UpdatedFilePath</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td>Path to new file</td></row>
+		<row><td>ISQuickPatchProperty</td><td>Property</td><td>N</td><td/><td/><td/><td/><td>Identifier</td><td/><td>Name of Property</td></row>
+		<row><td>ISQuickPatchProperty</td><td>Value</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td>String value for property.</td></row>
+		<row><td>ISQuickPatchRegistryKey</td><td>Effect</td><td>N</td><td/><td/><td/><td/><td/><td>0;1;2;4</td><td>Delta effect of this registry key entry</td></row>
+		<row><td>ISQuickPatchRegistryKey</td><td>Feature</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td/></row>
+		<row><td>ISQuickPatchRegistryKey</td><td>Key</td><td>N</td><td/><td/><td/><td/><td>Identifier</td><td/><td>Unique key name</td></row>
+		<row><td>ISQuickPatchRegistryKey</td><td>Name</td><td>N</td><td/><td/><td/><td/><td>Text</td><td/><td>Name of the registry key</td></row>
+		<row><td>ISQuickPatchRegistryKey</td><td>NewName</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td/></row>
+		<row><td>ISQuickPatchRegistryKey</td><td>Parent_Key</td><td>N</td><td/><td/><td/><td/><td>Text</td><td/><td>Parent key reference</td></row>
+		<row><td>ISQuickPatchRegistryValue</td><td>Data</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td/></row>
+		<row><td>ISQuickPatchRegistryValue</td><td>Effect</td><td>N</td><td/><td/><td/><td/><td/><td>0;1;2;4</td><td/></row>
+		<row><td>ISQuickPatchRegistryValue</td><td>Feature</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td/></row>
+		<row><td>ISQuickPatchRegistryValue</td><td>Key</td><td>N</td><td/><td/><td>ISQuickPatchRegistryKey</td><td>1</td><td>Text</td><td/><td/></row>
+		<row><td>ISQuickPatchRegistryValue</td><td>NewData</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td/></row>
+		<row><td>ISQuickPatchRegistryValue</td><td>NewValue</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td/></row>
+		<row><td>ISQuickPatchRegistryValue</td><td>Value</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td/></row>
+		<row><td>InstallShield</td><td>Property</td><td>N</td><td/><td/><td/><td/><td>Identifier</td><td/><td>Name of property, uppercase if settable by launcher or loader.</td></row>
+		<row><td>InstallShield</td><td>Value</td><td>Y</td><td/><td/><td/><td/><td>Text</td><td/><td>String value for property.</td></row>
+	</table>
+</msi>

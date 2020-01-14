@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<messages>
+ 
+  <!-- Course Complete-->
+  <message name="ccCourseComplete" id="259" value="Click &quot;Save &amp; Exit&quot; to finish the course." />
+  <message name="ccSaveButton" id="261" value="Save And Exit" />
+  <message name="ccSaveCloseMessage" id="262" value="Closing the browser window without saving will result in loss of data." />
+ 
+
+</messages>

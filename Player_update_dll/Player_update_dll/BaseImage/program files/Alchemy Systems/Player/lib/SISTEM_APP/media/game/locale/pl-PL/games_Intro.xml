@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--IF YOU HAVE 2 TEXT LINES, YOU SHOULD HAVE (2-1) CUE POINT TIMES, SO IT IS ALWAYS X - 1 = CUE POINTS -->
+<videos>
+	<!-- game VIDEO -->
+	<video>
+		<name>game</name>
+		<cc_text>
+			<te>Błyskawicznej rundzie!</te>
+			<te>To quiz, zabawa, to fortuna i sława!</te>
+			<te>Musisz szybko myśleć i działać.</te>
+			<te>Jeżeli jako pierwszy poprawnie odpowiesz na większość pytań,  zostaniesz</te>
+			<te>Zwycięzcą! Zwycięzcą! Zwycięzcą!</te>
+			<te>Gdy usłyszysz pytanie, odpowiedz tak lub nie.</te>
+			<te>Czas zacząć!</te>
+		</cc_text>
+		<cc_times>
+			<time>180</time>
+			<time>349</time>
+			<time>571</time>
+			<time>789</time>
+			<time>845</time>
+			<time>927</time>
+		</cc_times>
+	</video>
+</videos>

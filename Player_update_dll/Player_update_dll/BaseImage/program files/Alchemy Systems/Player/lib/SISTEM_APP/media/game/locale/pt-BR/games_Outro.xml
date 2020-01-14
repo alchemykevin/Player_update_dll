@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--IF YOU HAVE 2 TEXT LINES, YOU SHOULD HAVE (2-1) CUE POINT TIMES, SO IT IS ALWAYS X - 1 = CUE POINTS -->
+<videos>
+	<!-- game VIDEO -->
+	<video>
+		<name>game</name>
+		<cc_text>
+			<te>Parabéns! Você é nosso vencedor da Rodada Relâmpago!</te>
+			<te>Veremos você novamente na próxima Rodada Relâmpago!</te>
+		</cc_text>
+		<cc_times>
+			<time>180</time>
+		</cc_times>
+	</video>
+	<winner_text>
+		<te>Congratulations</te>
+		<te>!</te>
+		<te>You got</te>
+		<te>out of</te>
+		<te>game questions correct!</te>
+	</winner_text>
+	<disclaim_text>Game questions do not apply towards training score.</disclaim_text>
+</videos>

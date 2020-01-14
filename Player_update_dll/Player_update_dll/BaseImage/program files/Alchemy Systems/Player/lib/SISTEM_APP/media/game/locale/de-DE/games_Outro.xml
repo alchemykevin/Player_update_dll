@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--IF YOU HAVE 2 TEXT LINES, YOU SHOULD HAVE (2-1) CUE POINT TIMES, SO IT IS ALWAYS X - 1 = CUE POINTS -->
+<videos>
+	<!-- game VIDEO -->
+	<video>
+		<name>game</name>
+		<cc_text>
+			<te>Herzlichen Glückwunsch! Sie haben die Blitzrunde gewonnen.</te>
+			<te>Bis zum nächsten Mal hier bei der Blitzrunde!</te>
+		</cc_text>
+		<cc_times>
+			<time>180</time>
+		</cc_times>
+	</video>
+	<winner_text>
+		<te>Glückwunsch!</te>
+		<te>!</te>
+		<te>Du hast</te>
+		<te>von</te>
+		<te>Fragen richtig!</te>
+	</winner_text>
+	<disclaim_text>Spielfragen gelten nicht für Ergebnisse.</disclaim_text>
+</videos>

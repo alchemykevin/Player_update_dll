@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--IF YOU HAVE 2 TEXT LINES, YOU SHOULD HAVE (2-1) CUE POINT TIMES, SO IT IS ALWAYS X - 1 = CUE POINTS -->
+<videos>
+	<!-- game VIDEO -->
+	<video>
+		<name>game</name>
+		<cc_text>
+			<te>လျှပ်စီး ကစားဝိုင်းမှ ကြိုဆိုပါတယ်!</te>
+			<te>ဒါဟာ ဉာဏ်စမ်းပွဲပါ၊ ဒါဟာ ကံကြမ္မာ နဲ့ ကျော်ကြားမှုပါ!</te>
+			<te>သင်ဟာ မြန်မြန် စဉ်းစားလျက်  မြန်မြန် လုပ်ကိုင်ရပါမယ်။</te>
+			<te>မေးခွန်း အများဆုံးကို ဦးစွာ မှန်အောင် ဖြေနိုင်ရင် သင်ဟာ ဒို့ရဲ့</te>
+			<te>နိုင်သူ! နိုင်သူ! နိုင်သူ!</te>
+			<te>မေးခွန်းကြားရတာနဲ့၊ ဟုတ်တယ်၊ မဟုတ်ဘူး ဖြေ။</te>
+			<te>ကျနော်တို့ ရှေ့ဆက်ကြပါမယ်!</te>
+		</cc_text>
+		<cc_times>
+			<time>180</time>
+			<time>349</time>
+			<time>571</time>
+			<time>789</time>
+			<time>845</time>
+			<time>927</time>
+		</cc_times>
+	</video>
+</videos>

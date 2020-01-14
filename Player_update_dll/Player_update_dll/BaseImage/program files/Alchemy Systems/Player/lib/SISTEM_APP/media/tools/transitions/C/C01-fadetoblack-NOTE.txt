@@ -1,0 +1,14 @@
+C01-fadetoblack.swf
+C02-fadetoblack.swfC04-fadetoblack.swfC03-fadetoblack.swf
+
+are duplicates of
+
+Trans-Q_C01-to-Black.swf
+Trans-Q_C02-to-Black.swf
+Trans-Q_C03-to-Black.swf
+Trans-Q_C04-to-Black.swf
+
+These are Questions-to-Black transitions.
+
+To edit, use
+Trans-Q_C01-to-Black.fla

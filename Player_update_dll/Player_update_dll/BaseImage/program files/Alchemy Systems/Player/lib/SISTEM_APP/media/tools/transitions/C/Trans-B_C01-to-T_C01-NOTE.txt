@@ -1,0 +1,9 @@
+Trans-Bookend-to-T_C01.swf
+
+is a duplicate of
+
+Trans-B_C01-to-T_C01.swf
+
+
+
+To edit these transitions use Trans-B_C01-to-T_C01.fla

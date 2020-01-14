@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<locales defaultLocale="en-US">
+  <locale name="Arabic" localeCode="ar-AE" />
+  <locale name="Burmese" localeCode="my-MY" />
+  <locale name="Chinese PRC" localeCode="zh-CN" />
+  <locale name="English" localeCode="en-US" />
+  <locale name="English UK" localeCode="en-GB" />
+  <locale name="French" localeCode="fr-CA" />
+  <locale name="German DE" localeCode="de-DE" />
+  <locale name="Korean" localeCode="ko-KR" />
+  <locale name="Polish" localeCode="pl-PL" />
+  <locale name="Portuguese - Brazil" localeCode="pt-BR" />
+  <locale name="Punjabi" localeCode="pa-IN" />
+  <locale name="Spanish" localeCode="es-US" />
+  <locale name="Spanish ES" localeCode="es-ES" />
+  <locale name="Vietnamese" localeCode="vi-VN" />
+</locales>

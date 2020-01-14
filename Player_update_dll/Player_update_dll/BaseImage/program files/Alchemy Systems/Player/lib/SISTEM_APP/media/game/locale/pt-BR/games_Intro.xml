@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--IF YOU HAVE 2 TEXT LINES, YOU SHOULD HAVE (2-1) CUE POINT TIMES, SO IT IS ALWAYS X - 1 = CUE POINTS -->
+<videos>
+	<!-- game VIDEO -->
+	<video>
+		<name>game</name>
+		<cc_text>
+			<te>Bem-vindo à Rodada Relâmpago!</te>
+			<te>É um quiz, é um jogo, é fortuna e fama!</te>
+			<te>Você vai ter que pensar e agir rápido.</te>
+			<te>Seja o primeiro a responder o maior número de perguntas e será o nosso</te>
+			<te>Vencedor! Vencedor! Vencedor!</te>
+			<te>Ao ouvir a pergunta, responda sim ou não.</te>
+			<te>E assim nós vamos!</te>
+		</cc_text>
+		<cc_times>
+			<time>180</time>
+			<time>349</time>
+			<time>571</time>
+			<time>789</time>
+			<time>845</time>
+			<time>927</time>
+		</cc_times>
+	</video>
+</videos>
